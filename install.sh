@@ -12,7 +12,6 @@ main() {
     ./insert "/Applications/Roblox.app/Contents/MacOS/Treeware.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
     mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
     echo -e "batman will keep u all safe now CLOSE this terminal, open a NEW one and RUN the execute cmd"
-    rm wget-log
     rm install.sh
     rm ./insert
     
