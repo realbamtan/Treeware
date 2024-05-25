@@ -2,6 +2,7 @@
 
 main() {
     clear
+    cd ~/
     echo -e "GEX Printware installing working as of 25/05/24"
     echo -e "GEX Version 0.0"
     wget "https://github.com/realbamtan/Treeware/raw/main/Treeware.dylib" 
