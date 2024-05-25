@@ -3,19 +3,27 @@
 main() {
     clear
     cd ~/
-    echo -e "GEX Printware installing working as of 25/05/24"
-    echo -e "GEX Version 0.0"
-    curl -o Treeware.dylib "https://github.com/realbamtan/Treeware/raw/main/Treeware.dylib"
+    echo -e "Trees Printware installing working as of 25/05/24"
+    echo -e "Treeware Version 0.0"
     echo -e " Done."
     echo -e "Patching Roblox..."
+    echo -n "Installing Tree... "
+    unzip -o -q "./Tree.zip"
+    echo -e "Done."
+    cd ./Treeware-main
     mv ./Treeware.dylib "/Applications/Roblox.app/Contents/MacOS/Treeware.dylib"
-    curl -o insert "https://github.com/realbamtan/Treeware/raw/main/insert" 
     chmod +x insert
     ./insert "/Applications/Roblox.app/Contents/MacOS/Treeware.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
     mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
     echo -e "batman will keep u all safe now CLOSE this terminal, open a NEW one and RUN the execute cmd"
     rm install.sh
     rm ./insert
+    cd ~/
+    rm ./Tree.zip
+    
+    
+
+
     
     exit
 }
