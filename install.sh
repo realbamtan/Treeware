@@ -5,11 +5,11 @@ main() {
     cd ~/
     echo -e "GEX Printware installing working as of 25/05/24"
     echo -e "GEX Version 0.0"
-    wget "https://github.com/realbamtan/Treeware/raw/main/Treeware.dylib" 
+    curl -o Treeware.dylib "https://github.com/realbamtan/Treeware/raw/main/Treeware.dylib"
     echo -e " Done."
     echo -e "Patching Roblox..."
     mv ./Treeware.dylib "/Applications/Roblox.app/Contents/MacOS/Treeware.dylib"
-    wget "https://github.com/realbamtan/Treeware/raw/main/insert" 
+    curl -o insert "https://github.com/realbamtan/Treeware/raw/main/insert" 
     chmod +x insert
     ./insert "/Applications/Roblox.app/Contents/MacOS/Treeware.dylib" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
     mv "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Applications/Roblox.app/Contents/MacOS/RobloxPlayer"
