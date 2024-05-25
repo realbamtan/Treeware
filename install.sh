@@ -8,7 +8,7 @@ main() {
     echo -e " Done."
     echo -e "Patching Roblox..."
     mv ./Treeware.dylib "/Applications/Roblox.app/Contents/MacOS/Treeware.dylib"
-    echo -e "batman will keep u all safe now run the execute cmd"
+    echo -e "batman will keep u all safe now CLOSE this terminal, open a NEW one and RUN the execute cmd"
     rm wget-log
     rm install.sh
     
